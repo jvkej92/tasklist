@@ -17,7 +17,7 @@ class TaskController extends Controller {
             'tasks' => $tasks
         ]);
     }
-
+    
     //***************//
     //Add A New Task//
     //*************//
@@ -41,7 +41,6 @@ class TaskController extends Controller {
     //***********************//
     public function deleteTask($id){
         Task::findOrFail($id)->delete();
-        return redirect('/');
     }
 
     //********************//
@@ -49,5 +48,13 @@ class TaskController extends Controller {
     //*******************//
     public function json(){
         return Task::orderBy('created_at', 'asc')->get();
+    }
+
+    //**********************//
+    //Display Tasks by Name//
+    //********************//
+    public function taskName($name) {
+        $newTask = Task::where('name', '=', $name)->get();
+        return $newTask->toArray();
     }
 }

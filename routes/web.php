@@ -20,6 +20,7 @@ Route::get('/', 'TaskController@index');
 Route::post('/task', 'TaskController@createTask');
 Route::delete('/task/{id}', 'TaskController@deleteTask' );
 Route::get('/task/json', 'TaskController@json');
+Route::get('/task/{name}', 'TaskController@taskName');
 Route::get('/app', function(){
     return view('app');
 });
