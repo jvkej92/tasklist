@@ -1,36 +1,36 @@
-html{
+html {
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 18px;
     line-height: 1.7;
 }
 
-body{
+body {
     background: #fff7f7;
 }
 
-h1{
+h1 {
     font-family: 'Raleway';
     font-weight: 100;
     font-size: 3em;
     line-height: 1.7;
 }
 
-#current-tasks > h3{ 
+#current-tasks>h3 {
     font-family: 'Raleway';
     font-weight: 600;
     font-size: 1.5em;
 }
 
-ul{
+ul {
     position: relative;
-    width: 40%;
-    padding: 10px!important;
+    width: 30%;
+    padding: 10px !important;
     background: #eaebed;
     border-radius: 3px;
 }
 
-li{
+li {
     text-transform: capitalize;
     position: relative;
     width: 100%;
@@ -38,23 +38,23 @@ li{
     margin-bottom: 16px;
 }
 
-li:last-child{
-    margin-bottom: 0; 
+li:last-child {
+    margin-bottom: 0;
 }
 
-li.new-item{
+li.new-item {
     animation: fade-in;
     animation-duration: .4s;
 }
 
-#form{
+#form {
     position: relative;
     width: 30%;
 }
 
-.theme-btn{
+.theme-btn {
     font-family: 'Raleway';
-    background:#586c99;
+    background: #586c99;
     color: #ffffff;
     border-radius: 6px;
     border: 0px solid #0f4e82;
@@ -65,18 +65,18 @@ li.new-item{
     float: right;
 }
 
-.theme-btn:hover{
+.theme-btn:hover {
     background: #728dc9;
     cursor: pointer;
 }
 
-.theme-btn:active{
+.theme-btn:active {
     border-width: 0px;
-    border-top: 4px solid #fff7f7; 
-    margin-bottom: 6px;        
+    border-top: 4px solid #fff7f7;
+    margin-bottom: 6px;
 }
 
-input{
+input {
     background: #ffffff;
     border: 1px solid #e8e8e8;
     border-radius: 4px;
@@ -87,12 +87,13 @@ input{
     vertical-align: middle;
 }
 
-.input-error{
+.input-error {
     border: 1px solid #913838;
     background: #ffe2e2;
 }
 
-p.error-message, p.task-error{
+p.error-message,
+p.task-error {
     font-weight: 600;
     background: #ffe2e2;
     color: #913838;
@@ -101,25 +102,25 @@ p.error-message, p.task-error{
     box-sizing: border-box;
 }
 
-svg path{
+svg path {
     animation: fade-in;
     animation-duration: .3s;
     fill: #586c99;
 }
 
-svg.fa-minus-circle path{
+svg.fa-minus-circle path {
     fill: #913838;
 }
 
-.fade-in-and-out{
+.fade-in-and-out {
     display: none;
 }
 
-@keyframes fade-in{
-    from{
+@keyframes fade-in {
+    from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 1;
     }
 }
