@@ -33,7 +33,7 @@ class TaskController extends Controller {
         $task = new Task;
         $task->name = $request->name;
         $task->save();
-        return redirect('/');
+        // return redirect('/');
     }
 
     //*************************//
@@ -41,6 +41,7 @@ class TaskController extends Controller {
     //***********************//
     public function deleteTask($id){
         Task::findOrFail($id)->delete();
+        // return redirect('/');
     }
 
     //********************//
@@ -55,6 +56,6 @@ class TaskController extends Controller {
     //********************//
     public function taskName($name) {
         $newTask = Task::where('name', '=', $name)->get();
-        return $newTask->toArray();
+        return $newTask;
     }
 }
