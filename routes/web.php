@@ -17,6 +17,7 @@ use App\HTTP\Controllers\TaskController;
 //Task Routes//
 //***********//
 Route::get('/', 'TaskController@index');
+Route::get('/tasklist', 'TaskController@taskList');
 Route::post('/task', 'TaskController@createTask');
 Route::delete('/task/{id}', 'TaskController@deleteTask' );
 Route::get('/task/json', 'TaskController@json');
